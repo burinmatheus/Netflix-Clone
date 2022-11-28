@@ -8,9 +8,9 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Catalogo/>,
-        errorElement: <div>404</div>,
+        errorElement: <div>Página não Encontrada - 404</div>,
     }
-  ]);
+  ], { basename: '/Netflix_Clone/' });
 
 export function AppRoutes(){
     return <RouterProvider router={router} />;
